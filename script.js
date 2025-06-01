@@ -25,7 +25,12 @@ const promise3 = new Promise((resolve) => {
 function populateTable(res) {
 	const output = document.getElementById('output');
 
-	output.innerHTML = '';
+	console.log("Adding loading row...");
+	document.getElementById('output').innerHTML = '<tr id="loading"><td colspan="2">Loading...</td></tr>';
+
+// After removing loading row
+	console.log("Removing loading row...");
+	output.innerHTML = ''
 
 	const promiseNames = ['Promise 1', 'Promise 2', 'Promise 3'];
 
