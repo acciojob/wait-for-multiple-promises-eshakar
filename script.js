@@ -1,5 +1,5 @@
 function getRandomDelay() {
-        return Math.random() * 3 + 1; // Random between 1 and 3
+        return Math.random() * 2 + 1; // Random between 1 and 3
       }
 
       // Create promises that resolve with their actual resolution time
@@ -68,4 +68,5 @@ function getRandomDelay() {
         .catch((error) => {
           console.error('Error resolving promises:', error);
         });
+
 
